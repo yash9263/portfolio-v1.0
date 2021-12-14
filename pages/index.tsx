@@ -1,13 +1,10 @@
 import type { NextPage } from 'next'
-import styled from 'styled-components'
 
-const Headding1 = styled.h1`
-
-`
+import App from '../src/components/App'
 
 const Home: NextPage = () => {
   return (
-    <Headding1>Welcome</Headding1>
+    <App />
   )
 }
 
