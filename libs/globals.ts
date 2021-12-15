@@ -74,7 +74,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    font-family: var(--font-family-roboto);
+    font-family: var(--font-family-default);
   }
   /*
     6. Improve media defaults
@@ -115,7 +115,7 @@ export const GlobalStyle = createGlobalStyle`
     --color-accent: hsl(${COLORS.accent});
     --color-tertiary: hsl(${COLORS.tertiary});
     --color-stroke-black: hsl(${COLORS.stroke});
-    --font-family-roboto: 'Roboto', sans-serif;
+    --font-family-default: 'Roboto', sans-serif;
     --font-family-fredoka: 'Fredoka One', cursive;
   }
 
