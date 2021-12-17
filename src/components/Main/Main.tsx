@@ -17,14 +17,14 @@ const Main = () => {
   )
 }
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.main`
   background: var(--color-dark-background);
   color: var(--color-light-text);
   display: grid;
   place-items: center;
   grid-template-columns: repeat(2, 1fr);
   `
-export const Heading = styled.div`
+export const Heading = styled.header`
   h1{
     font-family: var(--font-family-fredoka);
     font-size: calc(64 / 16 * 1rem);
@@ -33,6 +33,7 @@ export const Heading = styled.div`
       4vw + 1rem,
       4rem
     );
+    font-weight: var(--font-weight-normal);
   }
   h3 {
     font-size: calc(24 / 16 * 1rem);
