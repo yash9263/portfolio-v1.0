@@ -7,7 +7,7 @@ const Main = () => {
     <Wrapper>
       <Heading>
         <h1>Hi! I am Yashwant</h1>
-        <h3>developer</h3>
+        <h3>a web developer</h3>
         <Link href='#'>get in touch</Link>
       </Heading>
       <SvgWrapper>
