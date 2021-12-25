@@ -6,20 +6,39 @@ const Header = () => {
     <HeaderWrapper>
       <Link href='/' passHref>
         <a>
-          <LogoWrapper>Y</LogoWrapper>
+          <LogoWrapper>yashwant</LogoWrapper>
         </a>
       </Link>
 
       <Nav>
         <ul>
           <NavItem>
-            <NavLink href="#">about</NavLink>
+            <NavLink href="#">
+              <div className='link-wrapper'>
+                <span>about</span>
+              </div>
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">project</NavLink>
+            <NavLink href="#">
+              <div className='link-wrapper'>
+                <span>work</span>
+              </div>
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">contact</NavLink>
+            <NavLink href="#">
+              <div className='link-wrapper'>
+                <span>projects</span>
+              </div>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#" >
+              <div className='link-wrapper'>
+                <span>contact</span>
+              </div>
+            </NavLink>
           </NavItem>
         </ul>
       </Nav>
@@ -28,15 +47,21 @@ const Header = () => {
 }
 
 export const HeaderWrapper = styled.header`
+  min-height: calc(36px + (8px * 2));
   display: flex;
   align-items: center;
   padding: 8px 32px;
   justify-content: space-around;
-  background: var(--color-dark-background);
-  color: var(--color-light-text);
+  background: var(--color-light-background);
+  color: var(--color-dark-text);
 `
 
-export const LogoWrapper = styled.div``
+export const LogoWrapper = styled.span`
+  font-family: var(--font-family-fredoka);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+`
 
 export const Nav = styled.nav`
   & > ul {
@@ -55,7 +80,35 @@ export const NavItem = styled.li`
 
 `
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
+  position: relative;
+  cursor: pointer;
+  .link-wrapper {
+    padding: 8px 0;
+    overflow: hidden;
+  }
+  span {
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
+    letter-spacing: .05rem;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      content: '';
+      height: 2px;
+      width: 100%;
+      background: var(--color-dark-text);
+      transform: translateX(-110%);
+      transition: transform cubic-bezier(.6,0,.3,1) 400ms;
+    }
+
+  }
+  &:hover span:after{
+    transform: translateX(0%);
+  }
 
 `
 export default Header
