@@ -6,35 +6,35 @@ import chat from '/public/chat.jpg'
 
 export const projects = [
   {
-    heading: 'photo-gallery',
+    heading: 'Photo gallery',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo quibusdam ab.',
     image: photogallery,
     link: '#',
     github: '#',
   },
   {
-    heading: 'cinema',
+    heading: 'Cinema',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo quibusdam ab.',
     image: cinema,
     link: '#',
     github: '#',
   },
   {
-    heading: 'chat',
+    heading: 'Chat',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo quibusdam ab.',
     image: chat,
     link: '#',
     github: '#',
   },
   {
-    heading: 'expense',
+    heading: 'Expense',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo quibusdam ab.',
     image: expense,
     link: '#',
     github: '#',
   },
   {
-    heading: 'evernote',
+    heading: 'Evernote',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo quibusdam ab.',
     image: evernote,
     link: '#',

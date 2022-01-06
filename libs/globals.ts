@@ -117,6 +117,7 @@ export const GlobalStyle = createGlobalStyle`
     --color-stroke-black: hsl(${COLORS.stroke});
     --font-family-default: 'Roboto', sans-serif;
     --font-family-fredoka: 'Fredoka One', cursive;
+    --font-family-comfortaa: 'Comfortaa', cursive;
   }
 
 `

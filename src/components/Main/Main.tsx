@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styled from 'styled-components'
-import Button from '../Button'
+import Button from '../Common/Button'
 import Developer from '../SVGs/Developer'
 
 const Main = () => {
