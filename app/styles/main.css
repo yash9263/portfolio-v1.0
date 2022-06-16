@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl leading-tight;
+  }
+  h2 {
+    @apply text-2xl leading-tight;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  p {
+    @apply my-4;
+  }
+}
+
+@layer components {
+  .min-h-body {
+    min-height: 100vh;
+    min-height: calc(100vh - env(safe-area-inset-bottom));
+  }
+  .min-h-hero {
+    min-height: calc(100vh - 5rem);
+    min-height: calc((100vh - 5rem) - env(safe-area-inset-bottom));
+  }
+  .animated-link {
+    @apply relative pb-2 before:content-[''] before:absolute before:bottom-0 before:left-0 before:right-0 before:w-full before:h-0.5 before:bg-slate-600 before:dark:bg-slate-200 before:scale-0 hover:before:scale-100 focus:before:scale-100 before:origin-left before:transition-transform before:duration-300;
+  }
+}

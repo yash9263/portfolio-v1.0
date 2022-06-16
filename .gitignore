@@ -7,3 +7,4 @@ node_modules
 .vscode
 
 /app/styles/tailwind.css
+/app/styles/unused.ts
